@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;200;300;400;500;800;900&display=swap');
+
+:root{
+    --header-height: 3.5rem;
+
+--first-hue: 250;
+--sat: 66%;
+--lig: 75%;
+--second-hue: 219;
+
+--first-color: hsl(var(--first-hue), var(--sat), var(--lig));
+--first-color-alt: hsl(var(--first-hue),var(--sat),71%);
+--title-color: hsl(var(--second-hue), 15% ,95%);
+--text-color: hsl(var(--second-hue),8%,75%);
+--text-color-light: hsl(var(--second-hue), 4% ,55%);
+--body-color: hsl(var(--second-hue), 48% , 8%);
+--container-color: hsl(var(--second-hue), 32% ,12%);
+
+
+--body-font: 'Montserrat', sans-serif;;
+--biggest-font-size: 1.75rem;
+--h1-font-size: 1.5rem;
+--h2-font-size: 1.25rem;
+--h3-font-size: 1rem;
+--normal-font-size: 0.938rem;
+--small-font-size: 0.813rem;
+--smaller-font-size: 0.75rem;
+--tiny-font-size: 0.625rem;
+
+--font-medium: 500;
+--font-semibold: 600;
+
+--z-tooltip: 10;
+--z-fixed: 100;
+--z-modal: 1000;
+}
+
+@media screen and (min-width: 968px){
+    :root{
+        --biggest-font-size: 2.5rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: 0.875rem;
+        --smaller-font-size: 0.813rem;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea{
+font-family: var(--body-font);
+font-size: var(--normal-font-size);
+}
+
+body{
+    
+}
