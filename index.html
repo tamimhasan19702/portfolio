@@ -16,6 +16,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 
     <link rel="shortcut icon" href="./contents/black1.png" type="image/x-icon">
@@ -28,8 +30,8 @@
     <!---------------- header-------------->
 <header class="header" id="header">
     <nav class="nav container">
-        <a href="#" class="nav-logo1"><img src="./contents/white.png" alt=""></a>
-        <a href="#" class="nav-logo2"><img src="./contents/black1.png" alt=""></a>
+        <a href="#" class="nav-logo">Ta<span class="nav-logo-cast1">req</span><span class="nav-logo-cast2">mim</span></a>
+        
 
         
         <div class="nav-menu">
@@ -67,13 +69,16 @@
                     </a>
                 </li>
 
+            
+
             </ul>
 
         </div>
 
-        <span class="material-icons-sharp change-theme" id="theme-button">nightlight_round</span>
-
-
+        <!-- <span class="material-icons-sharp change-theme" id="theme-button">nightlight_round</span> -->
+       
+        <i class="bx bx-moon change-theme" id="theme-button"></i>
+        <!-- <i class="fa-solid fa-sun change-theme" id="theme-button"></i> -->
     </nav>
 </header>
     <!-- ------------*header-------------- -->
@@ -454,7 +459,7 @@
 
 <!-- -------------------------services---------------- -->
 
-<section class="services section">
+<section class="services section" >
 
     <span class="section-subtitle">My services</span>
     <h2 class="section-title">What I Offer</h2>
@@ -1036,11 +1041,13 @@
 <div id="pagination" class="pagination"></div>
 
 </section>
-<!-- ----------------*work----------------------- -->
+
 
 <!-- -----------------------------testimonial--------------- -->
-<section class="testimonial section" id="testimonial">
-    <span class="section-subtitle">My clients say</span>
+<section class="testimonial section" >
+
+    <div class="" id="">
+    <span class="section-subtitle" >My clients say</span>
     <h2 class="section-title">Testimonial</h2>
 
     <div class="testimonial-container container swiper">
@@ -1117,6 +1124,7 @@
 
     </div>
 
+</div>
 </section>
 <!-- -------------------------------*testimonial------------- -->
 
@@ -1139,37 +1147,38 @@
                     <i class="fa-solid fa-envelope contact-card-icon"></i>
                     <h3 class="contact-card-title">Email</h3>
 
-                    <span class="contact-card-data">user@gmail.com</span>
+                    <span class="contact-card-data"><br> Tamimhasancu@gmail.com <br><br> Tareqmonower21@gmail.com</span>
 
 
                     <a href="mailto:Tamimhasancu@gmail.com" class="contact-button" target="blank">
-                        write me <i class="fa-solid fa-paper-plane-top contact-button-icon"></i>
+                        write me <i class="fa-solid fa-arrow-right-from-bracket contact-button-icon"></i>
                     </a>
                 </div>
 
 
                 <div class="contact-card">                
-                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-whatsapp contact-card-icon"></i>
                     <h3 class="contact-card-title">Whatsapp</h3>
 
-                    <span class="contact-card-data">+880171427830</span>
+                    <span class="contact-card-data"><br> +880171427830 
+                    </span>
 
 
                     <a href="https://wa.me/01714270830?text=Hey%20there,%20This%20is%20Tareq%20Monower%20(Tamim).%20Hope%20you%20having%20a%20great%20day.%20Please%20Send%20me%20your%20message..." class="contact-button" target="blank">
-                        write me <i class="fa-solid fa-paper-plane-top contact-button-icon"></i>
+                        write me <i class="fa-solid fa-arrow-right-from-bracket contact-button-icon"></i>
                     </a>
                 </div>
 
 
                 <div class="contact-card">                
-                    <i class="fa-brands fa-facebook-messenger"></i>
+                    <i class="fa-brands fa-facebook-messenger contact-card-icon"></i>
                     <h3 class="contact-card-title">Messenger</h3>
 
-                    <span class="contact-card-data">user.fb123</span>
+                    <span class="contact-card-data"><br> Tamim Hasan</span>
 
 
                     <a href="http://m.me/tareqmonowertamim" class="contact-button" target="blank">
-                        write me <i class="fa-solid fa-paper-plane-top contact-button-icon"></i>
+                        write me<i class="fa-solid fa-arrow-right-from-bracket contact-button-icon"></i>
                     </a>
                 </div>
 
@@ -1179,28 +1188,28 @@
 
     <div class="conatct-content">
         <h3 class="contact-title">
-            write me about your project
+            Write me about your project
         </h3>
 
-    <form action="" class="contact-form">
+    <form action="mailto:Tamimhasancu@gmail.com" class="contact-form" method="post" enctype="multipart/form-data">
 
 
         <div class="contact-form-div">
             <label for="contact-form-input" class="contact-form-tag">Name</label>
-            <input type="text" placeholder="Insert your name" class="contact-form-input" name="contact-form-input" id="contact-form-input">
+            <input type="text" placeholder="Insert your name" class="contact-form-input" name="contact-form-input EmailFrom" id="contact-form-input">
         </div>
    
         <div class="contact-form-div">
             <label for="contact-form-input" class="contact-form-tag">Mail</label>
-            <input type="text" placeholder="Insert your email" class="contact-form-input" name="contact-form-input" id="contact-form-input">
+            <input type="text" placeholder="Insert your email" class="contact-form-input" name="contact-form-input Email" id="contact-form-input">
         </div>
    
-        <div class="contact-form-div">
+        <div class="contact-form-div contact-form-area">
             <label for="contact-form-input" class="contact-form-tag">Project details</label>
            <textarea name="" id="" cols="30" rows="10" class="contact-form-input" placeholder="write about your project"></textarea>
         </div>
    
-   <button class="button"> Send Message</button>
+   <a href="" class="button" type="submit" value="submit"> Send Message </a>
 
     </form>
 
@@ -1212,23 +1221,63 @@
     </div>
 
 
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque recusandae facere quaerat dolorem laboriosam porro similique veniam iusto deleniti magni impedit corrupti, rerum, exercitationem beatae eum praesentium ea quas. Eius?
-Modi recusandae sit vero voluptate autem. Expedita, fuga quos a ad modi quidem iste debitis explicabo esse cupiditate ex tenetur quibusdam maiores dicta vitae sed odit dignissimos omnis hic. Ipsum.
-Qui quia esse sint quo nihil, dolore voluptatum! Et itaque fuga doloribus repudiandae distinctio veritatis perspiciatis ut omnis amet quisquam debitis quae ea, rerum voluptate similique dolorum explicabo fugiat inventore?
-Nostrum nobis sequi hic aspernatur accusamus! Similique consectetur ducimus aspernatur quasi quisquam. Eaque nostrum fugiat in itaque natus excepturi omnis pariatur. Cupiditate quibusdam placeat commodi voluptatibus incidunt saepe neque recusandae.
-Nostrum quis rerum et magnam, sapiente voluptatem accusamus facere animi voluptatibus dolores quaerat cum vel illum aliquid repellendus nam illo esse corporis tempore fuga a blanditiis! Voluptatum hic minima dolore.
-Mollitia consequuntur, similique, consectetur perspiciatis nobis dolorem illo non accusantium quisquam sint voluptatibus obcaecati ipsam maiores nesciunt tempora earum, nisi in cumque voluptatum consequatur. Sunt mollitia nesciunt ducimus explicabo aliquam.
-Nihil neque suscipit quaerat necessitatibus tempore reprehenderit est, recusandae placeat. Enim, delectus amet earum perferendis veritatis assumenda necessitatibus, repudiandae ducimus aliquam iure voluptatem quia doloribus et consectetur culpa nesciunt quidem.
-Cum, earum voluptate asperiores dolorem sed, debitis quae voluptatem, esse quod iusto enim assumenda. Repudiandae commodi possimus adipisci cum doloremque repellendus molestias laborum porro. Possimus totam mollitia omnis quas aspernatur?
-Perspiciatis, nisi quod et a ut tempore sequi iusto fugiat eligendi omnis autem. Accusantium eligendi provident itaque amet dolores reiciendis temporibus, qui cum atque esse, tenetur exercitationem est assumenda officiis.
-Quod laborum suscipit quasi, est, qui delectus quae natus quo aliquam molestias aut reiciendis, distinctio similique tempora fugit ex? Numquam sunt, eius nulla natus labore accusantium ex iste perspiciatis quas!</p>
-
 </section>
 
 <!-- --------------------------------*contact----------------- -->
 
 </main>
+
 <!-- --------------*main----------------- -->
+
+<!-- -------------------------------footer ------------------------>
+
+<footer class="footer">
+      <div class="footer-container container">
+          <h1 class="footer-title">Ta<span class="footer-logo-cast1">req</span><span class="footer-logo-cast2">mim</span></h1>
+
+       <ul class="footer-list">
+
+           <li>
+               <a href="#about" class="footer-link">About</a>
+           </li>
+
+           <li>
+               <a href="#work" class="footer-link">Projects</a>
+           </li>
+
+           <li>
+               <a href="#testimonial" class="footer-link">Testimonial</a>
+           </li>
+
+       </ul>
+
+
+<ul class="footer-social">
+
+    <a href="https://www.facebook.com/tareqmonowertamim" class="footer-social-link" target="blank"><i class="fa-brands fa-facebook"></i></a>
+
+    <a href="https://www.instagram.com/tamimhasan0170/" class="footer-social-link" target="blank"><i class="fa-brands fa-instagram"></i></a>
+
+    <a href="https://twitter.com/" class="footer-social-link" target="blank"><i class="fa-brands fa-twitter"></i></a>
+
+</ul>
+
+
+
+<span class="footer-copy">
+    &#169; Tareq monower tamim. All rights reserved
+</span>
+
+
+
+      </div>
+</footer>
+
+<!-- ----------------------*footer------------- -->
+
+
+
+<script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
