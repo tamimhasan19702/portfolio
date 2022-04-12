@@ -740,4 +740,16 @@ margin-bottom: 2rem;
       text-align: center;
   }
 
-  .contact
+  .contact-card-title,
+  .contact-card-data{
+      font-size: var(--small-font-size);
+  }
+
+  .contact-card-title{
+      font-weight: var(--font-medium);
+  }
+
+  .contact-card-data{
+      display: block;
+      margin-bottom: 0.75rem;
+  }
