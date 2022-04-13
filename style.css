@@ -1220,6 +1220,7 @@ line-height: 1.5rem;
 }
 
 .work-container{
+    grid-template-columns: repeat(2, max-content);
     gap: 3rem;
 }
 
