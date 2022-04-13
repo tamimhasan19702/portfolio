@@ -1208,11 +1208,11 @@ line-height: 1.5rem;
 }
 
 .skills-container{
-    grid-template-columns: repeat(2, 450px);
+    grid-template-columns: repeat(2, 430px);
 }
 
 .services-container{
-    grid-template-columns: repeat(3, 290px);
+    grid-template-columns: repeat(3, 280px);
 }
 
 .services-card{
