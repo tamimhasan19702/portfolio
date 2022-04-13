@@ -174,5 +174,5 @@ const sr = ScrollReveal({
 }) 
 
 sr.reveal('.home-data')
-sr.reveal('.home-handel' , {delay: 400})
-sr.reveal('.home-social, .home-scroll', {delay: 700, origin:'bottom'})
+sr.reveal('.home-handel' , {delay: 200})
+sr.reveal('.home-social, .home-scroll', {delay: 500, origin:'bottom'})
