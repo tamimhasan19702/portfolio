@@ -190,7 +190,7 @@ font-size: 2.0rem;
 }
 
 .nav-logo-cast2{
-    font-size: 0.4rem;
+    font-size: 0rem;
     overflow: hidden;
     margin-left: -1.5rem;
     transition: all 0.2s ease-in-out;
@@ -208,13 +208,13 @@ font-size: 2.0rem;
 .nav-logo:hover .nav-logo-cast2{
     visibility: visible;
     font-size: 1.8rem;
-    margin-left: 0.8rem;
+    margin-left: 1.5rem;
 
 }
 
 .nav-logo:hover .nav-logo-cast1{
     visibility: hidden;
-    font-size: 0.4rem;
+    font-size: 0rem;
     margin-left: -1.5rem;
 
 }
@@ -449,6 +449,7 @@ padding: 0.75rem 0.5rem ;
 
 .about-description{
 margin-bottom: 2rem;
+line-height: 1.5rem;
 }
 
 .skills-container{
@@ -893,7 +894,7 @@ margin-bottom: 2rem;
    
     
 .footer-logo-cast2{
-    font-size: 0.4rem;
+    font-size: 0rem;
     overflow: hidden;
     margin-left: -1.5rem;
     transition: all 0.2s ease-in-out;
@@ -903,7 +904,7 @@ margin-bottom: 2rem;
 .footer-logo-cast1{
     font-size: 1.8rem;
     overflow: hidden;
-    margin-left: 0.09rem;
+    margin-left: 0rem;
     transition: all 0.2s ease-in-out;
     visibility: visible;
 }
@@ -911,13 +912,13 @@ margin-bottom: 2rem;
 .footer-title:hover .footer-logo-cast2{
     visibility: visible;
     font-size: 1.8rem;
-    margin-left: 0.8rem;
+    margin-left: 1.5rem;
 
 }
 
 .footer-title:hover .footer-logo-cast1{
     visibility: hidden;
-    font-size: 0.4rem;
+    font-size: 0rem;
     margin-left: -1.5rem;
 
 }
@@ -927,7 +928,7 @@ margin-bottom: 2rem;
         display: flex;
         justify-content: center;
         column-gap: 1.5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
     .footer-social{
