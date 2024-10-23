@@ -835,6 +835,7 @@ a.jp-current {
 .contact-info {
   display: grid;
   gap: 1rem;
+  grid-template-columns: 600px;
 }
 
 .contact-card {
