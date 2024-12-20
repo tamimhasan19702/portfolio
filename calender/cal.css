@@ -1,0 +1,155 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f4f5;
+}
+.calender {
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 10px #ccc;
+    padding: 20px;
+    margin-right: 100px;
+}
+.calender-year {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+.calender-content {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    place-items: center;
+    row-gap: 1rem;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 1.2rem;
+}
+.calender-day {
+    text-align: center;
+    border-radius: 50rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.calender-day.disabled {
+    color: #dfdfdf;
+    cursor: not-allowed;
+}
+.calender-day.current {
+    background-color: #f3f9fe;
+    color: #70b0e8;
+}
+.calender-day.active {
+    background-color: #1d90f4;
+    color: #fff;
+}
+.date {
+    max-width: 45%;
+}
+.date h1 {
+    font-size: 10rem;
+    color: #70b0e888;
+}
+.date h3 {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    margin-top: -65px;
+    text-shadow: -2px -2px 8px #1d90f4aa;
+}
+.date h2 {
+    font-size: 4rem;
+    line-height: 4rem;
+}
+.date h2:nth-of-type(1) {
+    margin-top: 50px;
+}
+.date p {
+    margin: 20px 0;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+.date button {
+    padding ```html
+    15px 25px;
+    border-radius: 50rem;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    margin-right: 20px;
+}
+.date button:nth-of-type(1) {
+    background-color: #9ba6b6;
+}
+.date button:nth-of-type(2) {
+    background-color: #1d90f4;
+}
+.calender-year {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem; /* Adjust the overall font size */
+    margin-bottom: 30px;
+}
+.calender-year button {
+    background-color: #1d90f4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 0 10px; /* Add some margin for spacing */
+    font-size: 1.5rem; /* Font size for the year buttons */
+}
+.calender-year button:hover {
+    background-color: #0f6bbf;
+    transform: scale(1.1);
+}
+.calender-year button:focus {
+    outline: none;
+}
+.calender-year select {
+    font-size: 1rem; /* Reduced font size for the month dropdown */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px; /* Add some margin for spacing */
+}
+#currentYearDisplay {
+    font-size: 1.5rem; /* Font size for the year display */
+    margin-left: 10px; /* Space between the year display and the buttons */
+}
+.event-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+.event-details {
+    font-size: 1.2rem;
+}
+.event-details span {
+    font-weight: bold;
+}
