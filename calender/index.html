@@ -9,44 +9,38 @@
     <link rel="stylesheet" href="cal.css" />
   </head>
   <body>
-    <div class="calender">
-      <div class="calender-year">
-        <button id="prevYear">«</button>
-        <select id="monthList"></select>
-        <span id="currentYearDisplay"></span>
-        <button id="nextYear">»</button>
-      </div>
-      <div id="monthYearDisplay" class="month-year-display"></div>
-      <div class="calender-content">
-        <span>M</span>
-        <span>T</span>
-        <span>W</span>
-        <span>Th</span>
-        <span>F</span>
-        <span>S</span>
-        <span>S</span>
-      </div>
-    </div>
-    <div class="date">
-      <h1>21</h1>
-      <h3>February</h3>
-      <h2>President's Day</h2>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta,
-        eveniet.
-      </p>
-      <div class="event-card">
-        <h2>Event Information</h2>
-        <div class="event-details">
-          <p id="pastEvent">Past Event: <span>No Previous Event</span></p>
-          <p id="upcomingEvent">
-            Upcoming Event: <span>No Upcoming Event</span>
-          </p>
+    <div class="container">
+      <div class="calender">
+        <div class="calender-year">
+          <button id="prevYear">«</button>
+          <select id="monthList"></select>
+          <span id="currentYearDisplay"></span>
+          <button id="nextYear">»</button>
+        </div>
+        <div id="monthYearDisplay" class="month-year-display"></div>
+        <div class="calender-content">
+          <span>M</span>
+          <span>T</span>
+          <span>W</span>
+          <span>Th</span>
+          <span>F</span>
+          <span>S</span>
+          <span>S</span>
         </div>
       </div>
-      <button value="20">Previous</button>
-      <button value="22">Next</button>
+      <div class="date">
+        <h1>21</h1>
+        <h3>February</h3>
+        <h2>President's Day</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta,
+          eveniet.
+        </p>
+        <button value="20" class="previous">Previous</button>
+        <button value="22" class="next">Next</button>
+      </div>
     </div>
+
     <script src="cal.js"></script>
   </body>
 </html>

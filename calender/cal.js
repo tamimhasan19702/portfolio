@@ -6,67 +6,191 @@ const monthYearDisplay = document.getElementById("monthYearDisplay");
 const info = {
   date: document.querySelector(".date h1"),
   occassion: document.querySelector(".date h2"),
-  prevBtn: document.querySelector(".date button:nth-of-type(1)"),
-  nextBtn: document.querySelector(".date button:nth-of-type(2)"),
+  description: document.querySelector(".date p"), // New selector for description
+  prevBtn: document.querySelector(".date button.previous"),
+  nextBtn: document.querySelector(".date button.next"),
 };
-
-// Event card selectors
-const pastEventDisplay = document.getElementById("pastEvent");
-const upcomingEventDisplay = document.getElementById("upcomingEvent");
-const eventCard = document.querySelector(".event-card");
 
 // Current Date
 let currentDate = new Date();
 
-// Year-long events
+// Year-long events with descriptions
 const events = {
   0: {
     // January
-    1: { name: "New Year's Day", color: "#FF5733" },
+    1: {
+      name: "New Year's Day",
+      color: "#FF5733",
+      description: "Celebrate the start of the new year!",
+    },
+    15: {
+      name: "Martin Luther King Jr. Day",
+      color: "#FFD700",
+      description: "A day to honor the life and work of Martin Luther King Jr.",
+    },
   },
   1: {
     // February
-    14: { name: "Valentine's Day", color: "#FF33A1" },
+    14: {
+      name: "Valentine's Day",
+      color: "#FF33A1",
+      description: "A day to celebrate love and affection.",
+    },
+    15: {
+      name: "Chinese New Year",
+      color: "#FF33F6",
+      description:
+        "A celebration marking the beginning of the new year on the traditional Chinese calendar.",
+    },
   },
   2: {
     // March
-    17: { name: "St. Patrick's Day", color: "#33FF57" },
+    17: {
+      name: "St. Patrick's Day",
+      color: "#33FF57",
+      description:
+        "A cultural and religious celebration held on the anniversary of Saint Patrick's death.",
+    },
+    20: {
+      name: "International Day of Happiness",
+      color: "#FFD700",
+      description: "A day to celebrate and promote happiness and well-being.",
+    },
   },
   3: {
     // April
-    4: { name: "Independence Day", color: "#3357FF" },
+    1: {
+      name: "April Fool's Day",
+      color: "#FF33A1",
+      description: "A day to play pranks and jokes on others.",
+    },
+    4: {
+      name: "Independence Day",
+      color: "#3357FF",
+      description: "Celebrate the independence of our nation.",
+    },
+    15: {
+      name: "Tax Day",
+      color: "#FF33F6",
+      description: "The last day to file taxes in the United States.",
+    },
   },
   4: {
     // May
-    // Add events for May
+    1: {
+      name: "May Day",
+      color: "#FFD700",
+      description: "A celebration of spring and labor.",
+    },
+    5: {
+      name: "Cinco de Mayo",
+      color: "#FF33A1",
+      description: "A celebration of Mexican culture and independence.",
+    },
+    12: {
+      name: "Mother's Day",
+      color: "#FF33F6",
+      description: "A day to celebrate mothers and motherhood.",
+    },
+    25: {
+      name: "Memorial Day",
+      color: "#3357FF",
+      description:
+        "A day to honor and remember those who have died in military service.",
+    },
   },
   5: {
     // June
-    // Add events for June
+    1: {
+      name: "Pride Month",
+      color: "#FF33F6",
+      description:
+        "A month to celebrate and promote LGBTQ+ rights and awareness.",
+    },
+    14: {
+      name: "Flag Day",
+      color: "#FFD700",
+      description: "A day to celebrate the adoption of the United States flag.",
+    },
+    15: {
+      name: "Father's Day",
+      color: "#FF33A1",
+      description: "A day to celebrate fathers and fatherhood.",
+    },
   },
   6: {
     // July
-    // Add events for July
+    4: {
+      name: "Independence Day",
+      color: "#3357FF",
+      description: "Celebrate the independence of our nation.",
+    },
+    28: {
+      name: "World Hepatitis Day",
+      color: "#FF33F6",
+      description: "A day to raise awareness about hepatitis.",
+    },
   },
   7: {
     // August
-    // Add events for August
+    12: {
+      name: "World Elephant Day",
+      color: "#FFD700",
+      description: "A day to raise awareness about elephant conservation.",
+    },
+    26: {
+      name: "Women's Equality Day",
+      color: "#FF33A1",
+      description: "A day to celebrate the passage of the 19th Amendment.",
+    },
   },
   8: {
     // September
-    // Add events for September
+    1: {
+      name: "Labor Day",
+      color: "#FF33F6",
+      description: "A day to celebrate workers and their achievements.",
+    },
+    22: {
+      name: "Autumnal Equinox",
+      color: "#FFD700",
+      description: "The day the sun crosses the celestial equator.",
+    },
   },
   9: {
     // October
-    31: { name: "Halloween", color: "#FF33F6" },
+    31: {
+      name: "Halloween",
+      color: "#FF33F6",
+      description: "A celebration involving costumes and trick-or-treating.",
+    },
   },
   10: {
     // November
-    // Add events for November
+    1: {
+      name: "All Saints' Day",
+      color: "#FF33A1",
+      description: "A day to honor all Christian saints and martyrs.",
+    },
+    11: {
+      name: "Veterans Day",
+      color: "#3357FF",
+      description:
+        "A day to honor and remember those who have served in the military.",
+    },
+    26: {
+      name: "Thanksgiving Day",
+      color: "#FFD700",
+      description: "A day to celebrate and give thanks for the harvest.",
+    },
   },
   11: {
     // December
-    25: { name: "Christmas", color: "#FF33B5" },
+    25: {
+      name: "Christmas",
+      color: "#FF33B5",
+      description: "A holiday celebrating the birth of Jesus Christ.",
+    },
   },
 };
 
@@ -161,23 +285,12 @@ const changeInfo = (i) => {
 
   // Check if there is an event for the selected day
   if (events[currentDate.getMonth()] && events[currentDate.getMonth()][i]) {
-    eventCard.style.display = "none"; // Hide the event card if there is an event
-    info.occassion.innerHTML = `${
-      events[currentDate.getMonth()][i].name
-    } (Today)`;
+    const event = events[currentDate.getMonth()][i];
+    info.occassion.innerHTML = `${event.name} (Today)`;
+    info.description.innerHTML = event.description; // Display the event description
   } else {
-    eventCard.style.display = "block"; // Show the event card if there is no event
-    const pastEvent = events[currentDate.getMonth()][i - 1]
-      ? events[currentDate.getMonth()][i - 1].name
-      : "No Previous Event";
-    const upcomingEvent = events[currentDate.getMonth()][i + 1]
-      ? events[currentDate.getMonth()][i + 1].name
-      : "No Upcoming Event";
-
-    // Update the event card
-    pastEventDisplay.innerHTML = `Past Event: <span>${pastEvent}</span>`;
-    upcomingEventDisplay.innerHTML = `Upcoming Event: <span>${upcomingEvent}</span}`;
-    info.occassion.innerHTML = `${pastEvent} | ${upcomingEvent}`;
+    info.occassion.innerHTML = ""; // Clear occasion text
+    info.description.innerHTML = ""; // Clear description text
   }
 };
 
