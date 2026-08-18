@@ -1,0 +1,6 @@
+[
+  { "type": "email", "title": "Email", "value": "Tamimhasancu@gmail.com / Tareqmonower21@gmail.com", "url": "mailto:Tamimhasancu@gmail.com", "icon": "envelope", "displayOrder": 1 },
+  { "type": "whatsapp", "title": "WhatsApp", "value": "+880171427830", "url": "https://wa.me/01714270830?text=Hey%20there,%20This%20is%20Tareq%20Monower%20(Tamim).%20Hope%20you%20having%20a%20great%20day.%20Please%20send%20me%20your%20message...", "icon": "whatsapp", "displayOrder": 2 },
+  { "type": "linkedin", "title": "LinkedIn", "value": "Tareq Monower Tamim", "url": "https://www.linkedin.com/in/tareq-monower-tamim/", "icon": "linkedin", "displayOrder": 3 },
+  { "type": "github", "title": "GitHub", "value": "Tamim Hasan", "url": "https://github.com/tamimhasan19702", "icon": "github", "displayOrder": 4 }
+]

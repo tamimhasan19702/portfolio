@@ -15,7 +15,8 @@
     "plugins": [{ "name": "next" }],
     "paths": {
       "@/*": ["./src/*"],
-      "@payload-config": ["./src/app/(payload)/payload.config.ts"]
+      "@payload-config": ["./src/app/(payload)/payload.config.ts"],
+      "@/(frontend)/*": ["./src/app/(frontend)/*"]
     },
     "target": "ES2022"
   },

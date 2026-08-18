@@ -1,0 +1,18 @@
+[
+  { "category": "wordpress", "name": "Elementor", "level": "expert", "displayOrder": 1 },
+  { "category": "wordpress", "name": "WooCommerce", "level": "expert", "displayOrder": 2 },
+  { "category": "wordpress", "name": "Divi", "level": "expert", "displayOrder": 3 },
+  { "category": "wordpress", "name": "WordPress SEO", "level": "basic", "displayOrder": 4 },
+  { "category": "wordpress", "name": "PHP", "level": "basic", "displayOrder": 5 },
+  { "category": "wordpress", "name": "WordPress Bug Fix", "level": "intermediate", "displayOrder": 6 },
+  { "category": "wordpress", "name": "Speed Optimization", "level": "expert", "displayOrder": 7 },
+  { "category": "wordpress", "name": "WordPress Security", "level": "intermediate", "displayOrder": 8 },
+  { "category": "frontend", "name": "HTML5", "level": "expert", "displayOrder": 9 },
+  { "category": "frontend", "name": "CSS", "level": "expert", "displayOrder": 10 },
+  { "category": "frontend", "name": "Sass", "level": "basic", "displayOrder": 11 },
+  { "category": "frontend", "name": "Bootstrap", "level": "intermediate", "displayOrder": 12 },
+  { "category": "frontend", "name": "JavaScript", "level": "basic", "displayOrder": 13 },
+  { "category": "frontend", "name": "React", "level": "learning", "displayOrder": 14 },
+  { "category": "frontend", "name": "Git", "level": "basic", "displayOrder": 15 },
+  { "category": "frontend", "name": "TypeScript", "level": "learning", "displayOrder": 16 }
+]

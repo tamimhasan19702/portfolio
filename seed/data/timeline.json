@@ -1,0 +1,6 @@
+[
+  { "company": "Fiverr (Freelancer)", "period": "March 2022 - Present", "role": "WordPress and Frontend Developer", "description": "Started as a WordPress and Frontend Developer.", "url": "https://www.fiverr.com/tareqmonower?up_rollout=true", "urlLabel": "Visit my Fiverr Profile", "displayOrder": 1 },
+  { "company": "PeoplePerHour", "period": "December 2022 - Present", "role": "WordPress and Frontend Developer", "description": "Worked as a WordPress and Frontend Developer.", "url": "https://www.peopleperhour.com/freelancer/technology-programming/tareq-monower-professional-wordpress-and-front-nvjvqzw", "urlLabel": "Visit my PeoplePerHour Profile", "displayOrder": 2 },
+  { "company": "CMCZona LLC", "period": "March 2024 - November 2024", "role": "Remote Director of Digital Marketing and WordPress Developer", "description": "Joined as a Remote Director of Digital Marketing and WordPress Developer.", "url": "https://www.cmczona.com", "urlLabel": "Visit CMCZona", "displayOrder": 3 },
+  { "company": "NBYIT Solution", "period": "November 2024 - Present", "role": "WordPress and Frontend Developer", "description": "Currently working onsite as a WordPress and Frontend Developer.", "url": "https://www.nbyit.com", "urlLabel": "Visit NBYIT Solution", "displayOrder": 4 }
+]

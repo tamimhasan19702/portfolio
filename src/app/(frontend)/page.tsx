@@ -5,15 +5,15 @@ export default async function HomePage() {
   const payloadConfig = await config
   const payload = await getPayload({ config: payloadConfig })
 
-  const profile = await payload.find({ collection: 'profile', limit: 1 })
+  const hero = await payload.find({ collection: 'hero', limit: 1 })
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center p-8">
       <h1 className="text-4xl font-bold text-title mb-4">
-        {profile.docs[0]?.name || 'Tareq Monower Tamim'}
+        {hero.docs[0]?.name || 'Tareq Monower Tamim'}
       </h1>
       <p className="text-lg text-text">
-        {profile.docs[0]?.title || 'WordPress & Frontend Developer'}
+        {hero.docs[0]?.title || 'WordPress & Frontend Developer'}
       </p>
       <p className="mt-4 text-sm text-text-light">
         Portfolio coming soon...

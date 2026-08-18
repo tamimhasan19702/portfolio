@@ -1,0 +1,16 @@
+{
+  "siteTitle": "Tareq Monower Tamim's Portfolio",
+  "navLinks": [
+    { "label": "Home", "href": "#home", "icon": "home" },
+    { "label": "About", "href": "#about", "icon": "person" },
+    { "label": "Skills", "href": "#skills", "icon": "sticky_note_2" },
+    { "label": "Work", "href": "#work", "icon": "work" },
+    { "label": "Contact", "href": "#contact", "icon": "question_answer" }
+  ],
+  "footerLinks": [
+    { "label": "About", "href": "#about" },
+    { "label": "Projects", "href": "#work" },
+    { "label": "Testimonial", "href": "#testimonial" }
+  ],
+  "copyright": "© Tareq Monower Tamim. All rights reserved"
+}

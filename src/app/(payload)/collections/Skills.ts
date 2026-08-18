@@ -22,6 +22,7 @@ export const Skills: CollectionConfig = {
         { label: 'Expert', value: 'expert' },
         { label: 'Intermediate', value: 'intermediate' },
         { label: 'Basic', value: 'basic' },
+        { label: 'Learning', value: 'learning' },
       ],
     },
     { name: 'displayOrder', type: 'number', defaultValue: 0 },

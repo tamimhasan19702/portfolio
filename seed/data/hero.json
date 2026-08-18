@@ -1,0 +1,12 @@
+{
+  "name": "Tareq Monower Tamim",
+  "title": "WordPress & Frontend Developer",
+  "greeting": "Hello, I'm",
+  "bio": "Hi, I'm Tareq, and thank you for visiting my profile! I graduated with a B.Sc. in Electrical & Electronic Engineering from the University of Chittagong in 2024. For the past 3-4 years, I've worked as a WordPress and Front-end Developer on platforms like Fiverr and PeoplePerHour. My skills include building and designing WordPress websites, creating custom themes and plugins, and front-end development using React.js, Next.js, Tailwind, and REST API. I also develop mobile apps with React Native and Firebase. I'm passionate about delivering high-quality digital solutions and always improving my skills to offer the best service. I look forward to working with you!",
+  "cvUrl": "https://drive.google.com/file/d/1TgGF_oBafMnC6xql-mfwW12eCOyXFAcW/view?usp=sharing",
+  "stats": [
+    { "label": "Experience", "value": "3-4 Years Working", "icon": "award" },
+    { "label": "Completed", "value": "50+ Projects", "icon": "briefcase" },
+    { "label": "Support", "value": "Online 24/7", "icon": "headset" }
+  ]
+}

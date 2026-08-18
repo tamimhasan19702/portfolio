@@ -1,0 +1,6 @@
+[
+  { "platform": "LinkedIn", "url": "https://www.linkedin.com/in/tareq-monower-tamim/", "icon": "linkedin", "displayOrder": 1 },
+  { "platform": "GitHub", "url": "https://github.com/tamimhasan19702", "icon": "github", "displayOrder": 2 },
+  { "platform": "Facebook", "url": "https://www.facebook.com/profile.php?id=100007569578471", "icon": "facebook", "displayOrder": 3 },
+  { "platform": "WhatsApp", "url": "https://wa.me/01714270830?text=Hey%20there,%20This%20is%20Tareq%20Monower%20(Tamim).%20Hope%20you%20having%20a%20great%20day.%20Please%20Send%20me%20your%20message...", "icon": "whatsapp", "displayOrder": 4 }
+]

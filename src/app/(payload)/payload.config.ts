@@ -6,6 +6,7 @@ import { fileURLToPath } from 'url'
 import sharp from 'sharp'
 
 import { Profile } from './collections/Profile'
+import { Hero } from './collections/Hero'
 import { SocialLinks } from './collections/SocialLinks'
 import { Skills } from './collections/Skills'
 import { Timeline } from './collections/Timeline'
@@ -28,6 +29,7 @@ export default buildConfig({
   },
   collections: [
     Profile,
+    Hero,
     SocialLinks,
     Skills,
     Timeline,
