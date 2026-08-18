@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-body: hsl(219, 48%, 8%);
+  --color-container: hsl(219, 32%, 12%);
+  --color-title: hsl(219, 15%, 95%);
+  --color-text: hsl(219, 8%, 75%);
+  --color-text-light: hsl(219, 4%, 55%);
+  --color-primary: hsl(207, 90%, 72%);
+  --color-primary-alt: hsl(207, 90%, 68%);
+  --font-sans: var(--font-body), "Montserrat", system-ui, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-body);
+  color: var(--color-text);
+  transition: all 0.4s ease-in-out;
+}
+
+h1, h2, h3 {
+  color: var(--color-title);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 1024px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 5rem 2rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  background-color: var(--color-primary);
+  color: var(--color-body);
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-4px);
+  background-color: var(--color-primary-alt);
+}
+
+.button-ghost {
+  background: transparent;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.button-ghost:hover {
+  background-color: var(--color-primary);
+  color: var(--color-body);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-body);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 50rem;
+}
